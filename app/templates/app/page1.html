@@ -7,11 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <title>Django Render</title>
+    <title>maintext</title>
   </head>
   <body>
     <h1 class="center">ある山にて</h1>
-    <p>むかしむかしあるところに、おじいさんとおばあさんがおりました。</p>
-    <p>おじいさんは山に柴刈りに、おばあさんは川へ洗濯に行きました。</p>
+    <p class="typeing" data-speed="200">むかしむかしあるところに、おじいさんとおばあさんがおりました。
+    おじいさんは山に柴刈りに、おばあさんは川へ洗濯に行きました。</p>
+
+    <!-- JavaScriptファイルを読み込み -->
+    <script src="{% static 'js/maintext.js' %}"></script>
   </body>
 </html>

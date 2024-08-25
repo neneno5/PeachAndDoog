@@ -1,0 +1,12 @@
+.center {
+    text-align: center;
+    color: green;
+  }
+
+  .typeing {
+    opacity: 0;
+}
+
+.typeing.active {
+    opacity: 1;
+}
