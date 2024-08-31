@@ -6,6 +6,6 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     return render(request, "app/index.html")
 
-@login_required(login_url='/admin/login/')    
+@login_required(login_url='/admin/login/')
 def page1(request):
     return render(request, "app/page1.html")
