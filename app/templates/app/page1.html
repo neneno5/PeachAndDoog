@@ -7,17 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/maintext.css' %}" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="{% static 'js/maintext.js' %}"></script>
     <title>maintext</title>
   </head>
   <body>
     <h1 class="center">ある山にて</h1>
     <p id="a" class="center">むかしむかしあるところに、おじいさんとおばあさんがおりました。</p>
-    <p id="b" class="center">おじいさんは山に柴刈りりに、おばあさんは川へ洗濯に行きました。</p>
+    <p id="b" class="center">おじいさんは山に柴刈りに、おばあさんは川へ洗濯に行きました。</p>
     <p id="c" class="center">おばあさんが川で洗濯をしていると、どんぶらこ、どんぶらこと、大きな桃が流れてきました。</p>
     <p id="d" class="center">「おや、これは良いおみやげになるわ」</p>
     <p id="e" class="center">おばあさんは大きな桃をひろいあげて、家に持ち帰りました。</p>
+    <form action="{% url 'page2' %}" method="get">
+    <button type="submit">次へ</button>
+    </form>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="{% static 'js/maintext.js' %}"></script>
     
   </body>
 </html>

@@ -9,3 +9,7 @@ def index(request):
 @login_required(login_url='/admin/login/')
 def page1(request):
     return render(request, "app/page1.html")
+
+@login_required(login_url='/admin/login/')
+def page2(request):
+    return render(request, "app/page2.html")
